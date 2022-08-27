@@ -218,6 +218,54 @@ section {
   color: #219150;
 }
 
+
+.search-bar {
+  position: absolute;
+  background: #fff;
+  width: 49%;
+  left: 50%;
+  margin: 30px 0;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar form button {
+  background: #ff5361;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-bar form button img {
+  width: 15px;
+  margin-top: 7px;
+}
+
+.search-bar form label {
+  font-weight: 600;
+}
+
+.location-input {
+  flex: 1;
+}
+
+
 .home {
   padding: 0;
 }
