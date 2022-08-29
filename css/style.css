@@ -218,7 +218,6 @@ section {
   color: #219150;
 }
 
-
 .search-bar {
   position: absolute;
   background: #fff;
@@ -264,6 +263,98 @@ section {
 .location-input {
   flex: 1;
 }
+
+.slider-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(203, 202, 202);
+}
+.slider {
+  width: 700px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2em;
+}
+.slides {
+  width: 700%;
+  height: 300px;
+  display: flex; 
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 40%;
+  transition: 3s;
+}
+.slide img {
+  width: 700px;
+  height: 300px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 700px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border: 3px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background: #aaa;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked~ .first {
+  margin-left: -40%;
+}
+#radio3:checked~ .first {
+  margin-left: -80%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 700px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 3px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #aaa;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #aaa;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #aaa;
+}
+
 
 @media only screen and (max-width: 700px) {
   .header {
