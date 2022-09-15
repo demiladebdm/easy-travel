@@ -132,26 +132,26 @@ var swiper = new Swiper(".clients-slider", {
     },
 });
 
-// const search = () => {
-//   const searchbox = document.getElementById("search-box").ariaValueMax.toUpperCase();
-//   const storeitems = document.getElementById("container-filter")
-//   const product = document.querySelectorAll(".product")
-//   const pname = document.getElementsByTagName("h2")
+const search = () => {
+  const searchbox = document.getElementById("search-box").ariaValueMax.toUpperCase();
+  const storeitems = document.getElementById("container-filter")
+  const product = document.querySelectorAll(".product")
+  const pname = document.getElementsByTagName("h2")
 
-//   for(var i=0; 1 < pname.length; i++) {
-//     let match = product[i].getElementsByTagName('h2')[0];
+  for(var i=0; 1 < pname.length; i++) {
+    let match = product[i].getElementsByTagName('h2')[0];
 
-//     if(match) {
-//       let textValue = match.textContent || match.innerHTML
+    if(match) {
+      let textValue = match.textContent || match.innerHTML
 
-//       if(textValue.toUpperCase().indexOf(searchbox) > -1) {
-//         product[i].style.display = "";
-//       }else{
-//         product[i].style.display = "no result"; 
-//       }
-//     }
-//   }
-// }
+      if(textValue.toUpperCase().indexOf(searchbox) > -1) {
+        product[i].style.display = "";
+      }else{
+        product[i].style.display = "no result"; 
+      }
+    }
+  }
+}
 
 var counter = 1;
 setInterval(function() {
